@@ -1,0 +1,106 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f2f2; /* Azul claro mais suave para o fundo */
+}
+
+header {
+    width: 100%;
+    background-color: #f79b9b; /* Vermelho pastel ligeiramente mais suave */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 26px;
+    font-weight: bold;
+    border-bottom: 4px solid #e76f6f; /* Linha de separação levemente mais escura */
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap; /* Garante que a sidebar fique na lateral */
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    gap: 25px;
+    align-items: flex-start;
+}
+
+.main-content {
+    flex: 1 1 70%; /* Ajuste para garantir espaço correto para sidebar */
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.sidebar {
+    flex: 0 0 28%; /* Garante que a sidebar permaneça na lateral */
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+footer {
+    width: 100%;
+    background-color: #f1f9f9;
+    color: black;
+    text-align: center;
+    padding: 18px 0;
+    margin-top: 30px;
+    border-top: 4px solid #e0e0e0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+    margin-top: 25px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #a8d6d6;
+    border-radius: 8px;
+    background-color: #c8f1f1;
+    font-size: 17px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #ff6347; /* Tom mais quente para o foco */
+    box-shadow: 0 0 10px rgba(255, 99, 71, 0.5);
+    outline: none;
+}
+
+button {
+    background-color: #f79b9b;
+    color: white;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e76f6f;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .main-content, .sidebar {
+        flex: 1 1 100%;
+    }
+}

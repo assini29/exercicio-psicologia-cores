@@ -1,0 +1,88 @@
+/* Container para centralizar os campos */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    background-color: #72c2c2; /* Cor de fundo suave */
+}
+
+/* Estilo para os campos de entrada (input e textarea) */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    max-width: 400px; /* Largura máxima para não esticar demais */
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 14px;
+    border: 1px solid #b4d9d9;
+    border-radius: 8px;
+    background-color: #d4f7f7;
+    color: black;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Estilo específico para o textarea */
+textarea {
+    resize: none;
+    height: 150px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Efeito de foco nos campos de entrada */
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #ff7f50;
+    box-shadow: 0 0 8px rgba(255, 127, 80, 0.5);
+    outline: none;
+}
+
+/* Foco nos campos de entrada (com cor de borda e sombra) */
+input[type="text"], input[type="email"], textarea {
+    border-radius: 8px;
+}
+
+/* Estilo para o botão de enviar */
+button[type="submit"] {
+    background-color: #f7a1a1; /* Vermelho em tom pastel */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    padding: 12px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Indicador de clique */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição */
+}
+
+/* Efeito de foco e hover no botão */
+button[type="submit"]:hover, button[type="submit"]:focus {
+    background-color: #f07070; /* Tom mais forte de vermelho no hover/foco */
+    box-shadow: 0 0 8px rgba(255, 127, 80, 0.5); /* Sombra suave no hover/foco */
+    outline: none;
+}
+/* Alterando o fundo da página para um tom suave e calmo */
+body {
+    background-color: #e0f7f7; /* Azul claro pastel, na mesma paleta das caixas de mensagem */
+    font-family: 'Arial', sans-serif; /* Fonte para garantir consistência */
+    margin: 0; /* Remover margens padrão */
+    padding: 0; /* Remover preenchimento padrão */
+    height: 100vh; /* Garantir que ocupe toda a altura da tela */
+    display: flex; /* Para centralizar o conteúdo */
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+}
+
+/* Container para os campos de entrada (input e textarea) */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff; /* Fundo branco para destacar os campos */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para dar destaque */
+    width: 100%;
+    max-width: 500px; /* Limite de largura para uma boa apresentação */
+}

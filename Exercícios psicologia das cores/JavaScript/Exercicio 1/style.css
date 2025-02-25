@@ -1,0 +1,45 @@
+:root {
+    --primary-color: red;
+    --primary-hover: darkred;
+    --text-color: black;
+    --success-color: green;
+    --font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo {
+    color: var(--text-color);
+    transition: color 0.3s ease-in-out;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--primary-hover);
+}
